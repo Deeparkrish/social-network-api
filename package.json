@@ -1,0 +1,28 @@
+{
+  "name": "social-network-api",
+  "version": "1.0.0",
+  "description": "an API for a social network web application where users can share their thoughts, react to friends",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Deeparkrish/social-network-api.git"
+  },
+  "keywords": [
+    "thought",
+    "reactions"
+  ],
+  "author": "Deepa krishnan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Deeparkrish/social-network-api/issues"
+  },
+  "homepage": "https://github.com/Deeparkrish/social-network-api#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^6.0.2"
+  }
+}
