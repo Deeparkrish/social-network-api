@@ -28,9 +28,9 @@ const ReactionSchema = new Schema(
   {
     toJSON: {
       getters: true
-    }
-  }
-);
+    },
+    id:false
+  });
 
 const ThoughtSchema = new Schema({
 thoughtText: {

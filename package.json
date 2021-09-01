@@ -4,7 +4,6 @@
   "description": "an API for a social network web application where users can share their thoughts, react to friends",
   "main": "server.js",
   "scripts": {
-    "test": "node server",
     "start": "node server.js"
   },
   "repository": {
@@ -23,6 +22,7 @@
   "homepage": "https://github.com/Deeparkrish/social-network-api#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "mongoose": "^6.0.2"
+    "mongoose": "^6.0.3",
+    "validator": "^13.6.0"
   }
 }

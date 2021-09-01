@@ -1,4 +1,5 @@
 const { Schema ,model} = require("mongoose");
+const { isEmail } = require('validator');
 
 const UserSchema = new Schema({
     username: {
@@ -7,7 +8,7 @@ const UserSchema = new Schema({
         required:[true,'Username cannot be blank'],
         trim:true
     },
-    createdBy:{
+    email:{
         type:String,
         required:[true,'name cannot be blank'],
         unique:true,
@@ -27,8 +28,14 @@ const UserSchema = new Schema({
         type: Schema.Types.ObjectId,
         ref: 'User'
       }]
+    },
+    {
+        toJSON: {
+            virtuals: true
+        },
+        id: false
 })
-UserSchema.virtual('friendcount').get(function(){
+UserSchema.virtual('friendCount').get(function(){
     return this.friends.length;
 });
 const User = model('User',UserSchema);
