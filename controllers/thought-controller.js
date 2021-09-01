@@ -45,11 +45,7 @@ const thoughtController = {
   // Get thoughts by id 
   getThoughtById({params},res)
   {
-    Thought.findOne({_id:params.id})
-    .populate({
-      path:'reactions',
-      select:'-_v'
-    })
+    Thought.findOne({_id:params.thoughtId})
     .select('-_v')
     .then(dbThoughtData => {
       if(!dbThoughtData) {
