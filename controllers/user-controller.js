@@ -11,6 +11,12 @@ const userController= {
             path:'thoughts',
             select:'-__v'
         })
+        .populate(
+            {
+              path: 'friends',
+              select: '-__v'
+            }
+          )
         .select('-__v').sort({_id:-1})
         .then(dbUserData => res.json(dbUserData))
         .catch(err => {
@@ -26,6 +32,12 @@ const userController= {
             path:'thoughts',
             select:'-__v'
         })
+        .populate(
+            {
+              path: 'friends',
+              select: '-__v'
+            }
+          )
         .select('-__v')
         .then(dbUserData => {
             if(!dbUserData)
@@ -59,28 +71,30 @@ const userController= {
     //Delete a user by id 
     deleteUser({params},res)
     {
+
         User.findOneAndDelete({_id:params.id})
         .then(dbUserData => {
             if(!dbUserData){
                 res.status(404).json({ message: 'No user found with this id!' });
                 return;
             }
-            res.json(dbUserData);
             User.updateMany(
-                { _id: { $in: dbUserData.friends } },
+                {},
                 { $pull: { friends: params.id } }
               )
                 .then(() => {
                   Thought.deleteMany({ username: dbUserData.username })
                     .then(() => {
                       res.json({ message: "Successfully deleted" });
+                      res.json (dbUserData);
                     })
                     .catch((err) => res.status(400).json(err));
                 })
-                .catch((err) => res.status(400).json(err));
+            .catch((err) => res.status(400).json(err));
+
         })
+
         .catch(err => {
-        alert(err);
         res.sendStatus(400).json(err);
         });
 
