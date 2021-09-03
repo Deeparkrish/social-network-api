@@ -1,11 +1,14 @@
 // Add dependencies 
 const router = require('express').Router();
 // import all the user operations from controller 
-const {getAllUser,
+const {
+    getAllUser,
     getUserById,
     createUser,
     updateUser,
-    deleteUser} =require('../../controllers/user-controller');
+    deleteUser,
+    addFriend,
+    removeFriend} =require('../../controllers/user-controller');
 
     // /api/Users
 router.route('/')
@@ -19,9 +22,14 @@ router
 .put(updateUser)
 .delete(deleteUser);
 
-// router.route('/:id/friends/:friend')
-// .put(addFriend)
-// .delete(removeFriend)
+
+
+// /api/users/userId/friends/friendId
+router
+.route('/:id/friends/:friendId')
+.post(addFriend)     // POST /api/users/:userId/friends/:friendId
+.delete(removeFriend);     // DELETE /api/users/:userId/friends/:friendId
+
 
 // Export the user route functions 
 module.exports = router;

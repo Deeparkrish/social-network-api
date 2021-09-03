@@ -17,7 +17,6 @@ const UserSchema = new Schema({
                 return isEmail(value);
             },
             message: (prop) => `${prop.value} is not a valid email address`,
-
         }
     },
     thoughts:[{
