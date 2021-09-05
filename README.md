@@ -14,7 +14,7 @@
 </p>
 
  ## Description
-  An API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list. 
+  An API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list.The social network api uses a NoSQL database to handle large amounts of unstructured data.
 
  
   ## Table of Contents 
