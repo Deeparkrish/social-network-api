@@ -41,21 +41,21 @@
     
   ### API Routes 
   #### Users 
-    GET all users:    /api/users
-    GET a single user by id:  /api/thoughts/:userId 
-    ADD a new user:   /api/users
-    UPDATE user details user by id:  /api/users/_:id 
-    DELETE a user by id:  /api/users/_:id
-    ADD a friend to the user's friend list :  /api/users/:userId/friends
-    DELETE a friend from user's friend list : /api/users/:userId/friends/:friendId
+    GET all users:   ** /api/users**
+    GET a single user by id:  **/api/thoughts/:userId** 
+    ADD a new user:   **/api/users**
+    UPDATE user details user by id:  **/api/users/_:id** 
+    DELETE a user by id:  **/api/users/_:id**
+    ADD a friend to the user's friend list :  **/api/users/:userId/friends**
+    DELETE a friend from user's friend list : **/api/users/:userId/friends/:friendId**
  #### Thoughts
-    GET all thoughts: /api/thoughts
-    GET a single thought by id. for an user :  /api/thoughts/thoughtId
-    ADD a new thought:   api/thoughts/:userId
-    UPDATE user details user by id:  /api/thoughts/thoughtId
-    DELETE a thought by id: /api/thoughts/thoughtId
-    ADD a reaction to an user's thought :  /api/thoughts/:thoughtId/reactions
-    DELETE a reaction for a uswr thought: /api/thoughts/:thoughtId/reactionId
+    GET all thoughts: **/api/thoughts**
+    GET a single thought by id. for an user :  **/api/thoughts/thoughtId**
+    ADD a new thought:   **api/thoughts/:userId**
+    UPDATE user details user by id:  **/api/thoughts/thoughtId**
+    DELETE a thought by id: **/api/thoughts/thoughtId**
+    ADD a reaction to an user's thought :  **/api/thoughts/:thoughtId/reactions**
+    DELETE a reaction for a uswr thought: **/api/thoughts/:thoughtId/reactionId**
  
   ## License 
   [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)<br />
