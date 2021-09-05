@@ -4,7 +4,6 @@ const { Thought, User} = require('../models');
 const thoughtController = {
   // create a new thought 
   addThought({params,body }, res) {
-    console.log("Asdd THought*****",params ,body);
     Thought.create(body)
     .then(({_id}) => {
         return User.findOneAndUpdate(
@@ -66,7 +65,7 @@ const thoughtController = {
   updateThought({params,body},res)
   {
     Thought.findOneAndUpdate(
-      {_id:params.id},
+      {_id:params.thoughtId},
       body,
       {new:true,runValidators: true})
     .populate({path:'reactions',select:'-_v'})
@@ -94,11 +93,12 @@ const thoughtController = {
             { $pull: { thoughts: params.thoughtId } },
             { new: true } 
         );
+      
       })
       .then(dbUserData => {
-     
-        res.json(dbUserData);
-      })
+
+        res.json(dbThoughtData);
+      })   
       .catch(err => res.json(err));
   },
 
