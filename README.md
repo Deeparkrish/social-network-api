@@ -25,7 +25,7 @@
   * [Process](#process)
   * [Technologies](#technologies)
   * [ModelAssociations](#modelassociations)
-  * [ProjectDemo](#projectdemo)
+  * [WalkthroughVideo](#walkthroughvideo)
   * [Testing](#testing)
   * [ProjectRepo](#projectrepo)
   * [Contribution](#contribution)
