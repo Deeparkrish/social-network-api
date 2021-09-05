@@ -90,9 +90,11 @@
   ![Image](https://github.com/Deeparkrish/social-network-api/blob/main/src/assets/images/Thoughts.png)
   ![Image](https://github.com/Deeparkrish/social-network-api/blob/main/src/assets/images/reactions.png)
   
-  ## ProjectDemo
-  [![Youtube](https://img.youtube.com/vi/RNpZXHQjWBA/0.jpg)](https://www.youtube.com/embed/RNpZXHQjWBA)
-
+  ## WalkthroughVideo
+  ####  Users
+  [![Youtube](https://img.youtube.com/vi/BqXsYeAYSTI/0.jpg)](https://www.youtube.com/embed/BqXsYeAYSTI)
+  ####  Thoughts and Reactions 
+  [![Youtube](https://img.youtube.com/vi/o68Huklgxd4/0.jpg)](https://www.youtube.com/embed/o68Huklgxd4)
 
   ## Testing
   ####  CRUD operations can be testted using following applications:
