@@ -55,7 +55,7 @@
     UPDATE user details user by id: /api/thoughts/thoughtId
     DELETE a thought by id: /api/thoughts/thoughtId
     ADD a reaction to an user's thought :  /api/thoughts/:thoughtId/reactions
-    DELETE a reaction for a uswr thought:/api/thoughts/:thoughtId/reactionId
+    DELETE a reaction for a uswr thought:/api/thoughts/:thoughtId/reactions/reactionId
  
   ## License 
   [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)<br />
