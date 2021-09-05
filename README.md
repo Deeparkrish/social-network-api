@@ -61,7 +61,7 @@
 
   ## Testing
   ####  CRUD operations can be testted using following applications:
-    Insomnia core / Postman  or your browser 
+    Insomnia core / Postman   
     link : http://localhost:3001/api/<routes>
   
 
