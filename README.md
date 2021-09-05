@@ -69,10 +69,11 @@
   * He will also be able to successfully create and delete reactions to thoughts and add and remove friends to a user’s friend list.
   * validators have been added to validate input data 
   * Virtuals have been used to compute number of friends a user has  and number of reactions that a thought has:
-       
-       ThoughtSchema.virtual('reactionCount').get(function() {
+        
+        ThoughtSchema.virtual('reactionCount').get(function() {
         return this.reactions.length;
-        });
+        });   
+      
   * A  getter method  is added to format the timestamp on query:
        
         get: createdAtVal => dateFormat(createdAtVal)
