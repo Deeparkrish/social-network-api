@@ -38,7 +38,25 @@
   ##  Usage
   ### Start the app
     node server.js
-
+    
+  ### API Routes 
+  #### Users 
+    GET all users:    <b>/api/users</b>
+    GET a single user by id:  <b>/api/thoughts/:userId </b>
+    ADD a new user:   <b>/api/users</b>
+    UPDATE user details user by id:   <b>/api/users/_:id </b>
+    DELETE a user by id:<b>/api/users/_:id </b>
+    ADD a friend to the user's friend list :  <b>/api/users/:userId/friends</b>
+    DELETE a friend from user's friend list : <b>/api/users/:userId/friends/:friendId</b>
+ #### Thoughts
+    GET all thoughts: <b>/api/thoughts</b>
+    GET a single thought by id. for an user :  <b>/api/thoughts/thoughtId</b>
+    ADD a new thought:   <b> api/thoughts/:userId</b>
+    UPDATE user details user by id:   <b>/api/thoughts/thoughtId </b>
+    DELETE a thought by id:<b>/api/thoughts/thoughtId </b>
+    ADD a reaction to an user's thought :  <b>/api/thoughts/:thoughtId/reactions</b>
+    DELETE a reaction for a uswr thought: <b>/api/thoughts/:thoughtId/reactionId</b>
+ 
   ## License 
   [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)<br />
   This app is covered under ISC license.
