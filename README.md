@@ -61,8 +61,12 @@
   [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)<br />
   This app is covered under ISC license.
   
-   ## Process
- 
+  ## Process
+  * In a social network API, When the user enters the command (npm start/nodmeon/node server) to invoke the application,
+  * A server is started and the Mongoose models are synced to the MongoDB database.
+  * When he opens API GET routes in Insomnia Core for users and thoughts, the data for each of these routes is displayed in a formatted JSON.
+  * When he tests API POST, PUT, and DELETE routes in Insomnia Core, he wilk be able to successfully create, update, and delete **users** and **thoughts** in the       database.
+  * He will also be able to successfully create and delete reactions to thoughts and add and remove friends to a user’s friend list.
     
   ## Technologies 
   * Express.js for routing 
