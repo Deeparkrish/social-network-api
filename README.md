@@ -62,11 +62,11 @@
   ## Testing
   ####  CRUD operations can be testted using following applications:
     Insomnia core / Postman  or your browser 
-    link : http://localhost:3000/api/<routes>
+    link : http://localhost:3001/api/<routes>
   
 
   ## ProjectRepo 
-  Heroku: https://deepa-tech-blog.herokuapp.com/
+  Github: https://github.com/Deeparkrish/social-network-api
 
   ## Contribution
   Created with ❤️ by [Deepa Krishnan](https://github.com/DeeparKrish/README-generator)
