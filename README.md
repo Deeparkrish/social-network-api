@@ -53,9 +53,9 @@
  
   
   ## ModelAssociations
-   ![Webpage](https://github.com/Deeparkrish/social-network-api/blob/main/src/assets/images/users.png)
-  ![Webpage](https://github.com/Deeparkrish/social-network-api/blob/main/src/assets/images/Thoughts.png)
-  ![Webpage](https://github.com/Deeparkrish/social-network-api/blob/main/src/assets/images/reactions.png)
+  ![Image](https://github.com/Deeparkrish/social-network-api/blob/main/src/assets/images/users.png)
+  ![Image](https://github.com/Deeparkrish/social-network-api/blob/main/src/assets/images/Thoughts.png)
+  ![Image](https://github.com/Deeparkrish/social-network-api/blob/main/src/assets/images/reactions.png)
   
   ## ProjectDemo
   [![Youtube](https://img.youtube.com/vi/RNpZXHQjWBA/0.jpg)](https://www.youtube.com/embed/RNpZXHQjWBA)
