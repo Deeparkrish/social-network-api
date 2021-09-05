@@ -10,7 +10,7 @@
     <img src="https://img.shields.io/badge/MongoDB-blue"  />
     <img src="https://img.shields.io/badge/-node.js-green" />
     <img src="https://img.shields.io/badge/-express-red" >
-    <img src="https://img.shields.io/badge/-Javascript Date library-orange" >
+    <img src="https://img.shields.io/badge/-Javascript 'Date'-orange" >
 </p>
 
  ## Description
@@ -25,7 +25,7 @@
   * [Process](#process)
   * [Technologies](#technologies)
   * [ModelAssociations](#modelassociations)
-  * [ProjectDemo](#projectdemo)
+  * [WalkthroughVideo](#walkthroughvideo)
   * [Testing](#testing)
   * [ProjectRepo](#projectrepo)
   * [Contribution](#contribution)
@@ -38,13 +38,46 @@
   ##  Usage
   ### Start the app
     node server.js
-
+    
+  ### API Routes 
+  #### Users 
+    GET all users:   /api/users
+    GET a single user by id:  /api/thoughts/:userId
+    ADD a new user:   /api/users
+    UPDATE user details user by id:  /api/users/_:id
+    DELETE a user by id: /api/users/_:id
+    ADD a friend to the user's friend list :  /api/users/:userId/friends
+    DELETE a friend from user's friend list : /api/users/:userId/friends/:friendId
+ #### Thoughts
+    GET all thoughts: /api/thoughts
+    GET a single thought by id. for an user :  /api/thoughts/thoughtId
+    ADD a new thought:   api/thoughts/:userId
+    UPDATE user details user by id: /api/thoughts/thoughtId
+    DELETE a thought by id: /api/thoughts/thoughtId
+    ADD a reaction to an user's thought :  /api/thoughts/:thoughtId/reactions
+    DELETE a reaction for a uswr thought:/api/thoughts/:thoughtId/reactions/reactionId
+ 
   ## License 
   [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)<br />
   This app is covered under ISC license.
   
-   ## Process
- 
+  ## Process
+  * In a social network API, When the user enters the command (npm start/nodmeon/node server) to invoke the application,
+  * A server is started and the Mongoose models are synced to the MongoDB database.
+  * When he opens API GET routes in Insomnia Core for users and thoughts, the data for each of these routes is displayed in a formatted JSON.
+  * When he tests API POST, PUT, and DELETE routes in Insomnia Core, he wilk be able to successfully create, update, and delete **users** and **thoughts** in the       database.
+  * He will also be able to successfully create and delete reactions to thoughts and add and remove friends to a user’s friend list.
+  * validators have been added to validate input data 
+  * Virtuals have been used to compute number of friends a user has  and number of reactions that a thought has:
+        
+        ThoughtSchema.virtual('reactionCount').get(function() {
+        return this.reactions.length;
+        });   
+      
+  * A  getter method  is added to format the timestamp on query:
+       
+        get: createdAtVal => dateFormat(createdAtVal)
+  
     
   ## Technologies 
   * Express.js for routing 
@@ -53,11 +86,15 @@
  
   
   ## ModelAssociations
-  ![Webpage](https://github.com/Deeparkrish/tech-blog/blob/master/src/img/model-asso%20-mockup.png)
+  ![Image](https://github.com/Deeparkrish/social-network-api/blob/main/src/assets/images/users.png)
+  ![Image](https://github.com/Deeparkrish/social-network-api/blob/main/src/assets/images/Thoughts.png)
+  ![Image](https://github.com/Deeparkrish/social-network-api/blob/main/src/assets/images/reactions.png)
   
-  ## ProjectDemo
-  [![Youtube](https://img.youtube.com/vi/RNpZXHQjWBA/0.jpg)](https://www.youtube.com/embed/RNpZXHQjWBA)
-
+  ## WalkthroughVideo
+  ####  Users
+  [![Youtube](https://img.youtube.com/vi/BqXsYeAYSTI/0.jpg)](https://www.youtube.com/embed/BqXsYeAYSTI)
+  ####  Thoughts and Reactions 
+  [![Youtube](https://img.youtube.com/vi/o68Huklgxd4/0.jpg)](https://www.youtube.com/embed/o68Huklgxd4)
 
   ## Testing
   ####  CRUD operations can be testted using following applications:
