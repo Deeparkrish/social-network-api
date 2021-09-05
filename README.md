@@ -53,7 +53,9 @@
  
   
   ## ModelAssociations
-  ![Webpage](https://github.com/Deeparkrish/tech-blog/blob/master/src/img/model-asso%20-mockup.png)
+   ![Webpage](https://github.com/Deeparkrish/social-network-api/blob/main/src/assets/images/users.png)
+  ![Webpage](https://github.com/Deeparkrish/social-network-api/blob/main/src/assets/images/Thoughts.png)
+  ![Webpage](https://github.com/Deeparkrish/social-network-api/blob/main/src/assets/images/reactions.png)
   
   ## ProjectDemo
   [![Youtube](https://img.youtube.com/vi/RNpZXHQjWBA/0.jpg)](https://www.youtube.com/embed/RNpZXHQjWBA)
