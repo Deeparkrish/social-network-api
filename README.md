@@ -10,7 +10,7 @@
     <img src="https://img.shields.io/badge/MongoDB-blue"  />
     <img src="https://img.shields.io/badge/-node.js-green" />
     <img src="https://img.shields.io/badge/-express-red" >
-    <img src="https://img.shields.io/badge/-Javascript Date library-orange" >
+    <img src="https://img.shields.io/badge/-Javascript 'Date'-orange" >
 </p>
 
  ## Description
